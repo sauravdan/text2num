@@ -79,6 +79,7 @@ def text2num(s):
     n = 0
     g = 0
     for w in a:
+        w = w.lower()
         x = Small.get(w, None)
         if x is not None:
             g += x
