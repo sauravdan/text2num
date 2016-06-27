@@ -58,10 +58,17 @@ Small = {
 
 Magnitude = {
     'thousand':     1000,
+    'lakh':         100000,
     'million':      1000000,
+    'crore':        10000000,
     'billion':      1000000000,
+    'arab':         1000000000,
+    'kharab':       100000000000, 
     'trillion':     1000000000000,
+    'neel':         10000000000000,
     'quadrillion':  1000000000000000,
+    'padm':         1000000000000000,
+    'shankh':       100000000000000000,
     'quintillion':  1000000000000000000,
     'sextillion':   1000000000000000000000,
     'septillion':   1000000000000000000000000,
@@ -101,7 +108,11 @@ if __name__ == "__main__":
     assert 300 == text2num("three hundred")
     assert 1200 == text2num("twelve hundred")
     assert 12304 == text2num("twelve thousand three hundred four")
+    assert 100000 == text2num("One lakh")
     assert 6000000 == text2num("six million")
+    assert 6000000 == text2num("sixty Lakh")
     assert 6400005 == text2num("six million four hundred thousand five")
+    assert 6400005 == text2num("sixty four lakh five")
     assert 123456789012 == text2num("one hundred twenty three billion four hundred fifty six million seven hundred eighty nine thousand twelve")
+    assert 123456789012 == text2num("one kharab twenty three arab forty five crore sixty seven lakh eighty nine thousand twelve")
     assert 4000000000000000000000000000000000 == text2num("four decillion")
